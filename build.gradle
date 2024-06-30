@@ -46,6 +46,7 @@ bootBuildImage {
     environment = ["BP_JVM_VERSION": "17"]
 
     docker {
+//        host = "//./pipe/dockerDesktopLinuxEngine"
         publishRegistry {
             username = project.findProperty("registryUsername")
             password = project.findProperty("registryToken")
