@@ -43,7 +43,7 @@ jobs:
       - name: Install tools
         uses: alexellis/arkade-get@master
         with:
-          kubeconform:latest
+          kubeconform: latest
       - name: Validate Kubernetes manifests
         run: |
           kubeconform --strict --verbose k8s
